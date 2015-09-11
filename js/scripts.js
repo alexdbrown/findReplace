@@ -2,11 +2,11 @@ var findReplace = function(inputString, matchedWord, replacedWord) {
     var lowerInputString = inputString.toLowerCase();
     var lowerMatchedWord = matchedWord.toLowerCase();
     var splitInputString = lowerInputString.split(' ');
-    var foundWord = [];
+    var foundWord = "";
 
     for (var i = 0; i < splitInputString.length; i++) {
         if (splitInputString[i] === lowerMatchedWord) {
-            foundWord.push(splitInputString[i]);
+            foundWord = splitInputString[i];
             return foundWord;
         }
     }
